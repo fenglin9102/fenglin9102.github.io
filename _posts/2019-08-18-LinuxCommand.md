@@ -2,7 +2,7 @@
 layout:     post
 title:      Linux 常用命令
 subtitle:   ln链接 grep搜索内容 find查找文件
-date:       2019-08-19
+date:       2019-08-18
 author:     枫林
 header-img: img/hua_shan.jpg
 catalog:    true
