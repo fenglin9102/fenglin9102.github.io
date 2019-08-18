@@ -1,28 +1,19 @@
 ---
 layout:     post
-title:      Test
-subtitle:   Mac终端显示输树状文件结构
+title:      更新，替换，升级Ruby
+subtitle:   Ruby在Mac上遇到的问题总结
 date:       2019-08-18
-author:     BY
+author:     枫林
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
     - Mac
     - 效率
     - 开发技巧
+    - Ruby
 ---
 
-
-
-### 技巧
-
-1. 可以在User-Defined 中声明环境变量
-
-   ![userDefined](/Users/zhangfenglin/Documents/workspace/ARTS/Assets/userDefined.jpeg)
-
-​       可以在info.plist文件中读取，也可以直接创建一个xcconfig文件。
-
-2. 更换ruby 源
+1. 更换ruby 源
 
    查看当前的ruby源
 
@@ -42,9 +33,7 @@ tags:
    gem source -a https://gems.ruby-china.com/　
    ```
 
- 
-
-3. 升级ruby
+2. 升级ruby
 
    ```ruby
    ruby -v #查看当前ruby版本
@@ -55,15 +44,13 @@ tags:
    # 这个安装时间特别长，100M电信安装了1个小时
    ```
 
-4. 使用gem遇到 ```write permissions for the /usr/bin directory```
+   
 
-   ```ruby
+3. 使用gem遇到 ```write permissions for the /usr/bin directory``` Apple对Mac权限做了限制
+
+   ```
    sudo gem install -n /usr/local/bin cocoapods  #切换安装路径
    ```
 
-   
-
-> [xcconfig](https://help.apple.com/xcode/#/dev745c5c974)
->
 > [Ruby China]([https://gems.ruby-china.com](https://gems.ruby-china.com/))
 
